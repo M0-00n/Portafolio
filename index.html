@@ -1,88 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Montse</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portafolio's Montse</title>
-    
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <span class="logo">Montse</span>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li><a href="#contact" class="contact-btn">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-        <nav>
-            <div class="nav-container">
-                <div class="logo">
-                    <span>Montse</span>
-                    <div class="links">
-                        <div class="link"><a href="#" >Home</a></div>
-                        <div class="link"><a href="#" >About Me</a></div>
-                        <div class="link"><a href="#" >Skills</a></div>
-                        <div class="link"><a href="#" >Projects</a></div>
-                        <div class="link contact-btn"><a href="#" >Contact Me</a></div>
-                    </div>
-                </div>
-                <i class="fa-solid fa-bars hamburg"></i>
-                <div class="dropdown">
-                    <a href="#" >Home</a>
-                    <a href="#" >About Me</a>
-                    <a href="#" >Skills</a>
-                    <a href="#" >Projects</a>
-                    <a href="#" >Contact Me</a>
-                    <i class="fa-solid fa-xmark cancel"></i>
-                </div>
+    <section id="home" class="hero">
+        <div class="content">
+            <h1>Hi there! I'm <span>Montse</span></h1>
+            <p>I'm a Full Stack Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/M0-00n"><i class="fa-brands fa-github"></i></a>
+                <a href="linkedin.com/in/montserrat-pineda-díaz-ab85b3274"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-        </nav>
-    
-    <main>
-        <section>
-            <div class="main-container">
-                <div class="image"></div>
-                <img src="./photos/Montse1p1.jpg" alt="self img">
+            <a href="./CV Montserrat Pineda.pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="image">
+            <img src="./images/Montse1por1.jpg" alt="Montse">
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <span>Java</span> <span>Spring Boot</span> <span>Node.js</span> <span>APIs RESTful</span>
+            <span>HTML5</span> <span>JavaScript</span> <span>CSS Framework</span> <span>Figma</span>
+            <span>Git</span> <span>GitHub</span> <span>Agile</span> <span>Jira</span>
+            <span>AWS</span> <span>VS Code</span> <span>Python 3</span> <span>MySQL</span>
+            <span>Bootstrap</span> <span>IA en Desarrollo</span>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./images/project_Landingpage_Raiznomada.png" alt="Proyecto 1">
+                <h3>Landing Page Raíz Nómada</h3>
+                <p>Landing page para una tienda deportiva creada en Hackathon.</p>
+                <a href="https://hackathon-landingpage-tiendad.vercel.app" class="btn">Ver Proyecto</a>
+                <a href="https://github.com/EdnaEustaquio/Hackathon-LandingPage" class="btn">Ver Código</a>
             </div>
-            <div class="content">
-                <h1>Hi there! I'm <span>Montse</span></h1>
-                <div class="typewriter"><span>I'm a</span></div>
-                <div class="social-links">
-                    <a href="#" ><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <div class="btn">
-                    <button> Download CV</button>
-                </div>
-
-
-
+            <div class="project-card">
+                <img src="./images/project_E-commerce_whitelotus.png" alt="Proyecto 2">
+                <h3>E-commerce White Lotus</h3>
+                <p>E-commerce de envío de flores desarrollado en Generation.</p>
+                <a href="https://m0-00n.github.io/Equipo-1/" class="btn">Ver Proyecto</a>
+                <a href="https://github.com/M0-00n/Equipo-1" class="btn">Ver Código</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-
-
-        <section id="projects" class="section">
-            <h2>Proyectos</h2>
-            <div class="projects-container">
-        
-                <!-- Proyecto 1 -->
-                <div class="project-card">
-                    <img src="ruta-de-la-imagen-proyecto1.jpg" alt="Proyecto 1">
-                    <h3>Landingpage de una página deportiva</h3>
-                    <p>Creamos una landingpage y marca llama Raís Nómada, hicimos uso de estilos en css, estilos de bootstrap todo como parte de un reto de Hackaton</p>
-                    <a href="https://hackathon-landingpage-tiendad-git-8a335b-montserrat-ps-projects.vercel.app" target="_blank" class="btn">Ver Proyecto</a>
-                    <a href="https://github.com/EdnaEustaquio/Hackathon-LandingPage-TiendaDeportiva" target="_blank" class="btn">Ver Código</a>
-                </div>
-        
-                <!-- Proyecto 2 -->
-                <div class="project-card">
-                    <img src="ruta-de-la-imagen-proyecto2.jpg" alt="Proyecto 2">
-                    <h3>E-commerce White Lotus</h3>
-                    <p>Como parte del proyecto de integración del Bootcamp, en trabajo colaborativo se desarrrollo una e-commerce de envio de flores haciendo uso de JavaScript, CSS, Boostrap, HTML, Java .</p>
-                    <a href="https://m0-00n.github.io/Equipo-1/" target="_blank" class="btn">Ver Proyecto</a>
-                    <a href="https://github.com/M0-00n/Equipo-1" target="_blank" class="btn">Ver Código</a>
-                </div>
-        
-            </div>
-        </section>
-    </main>
+    <footer>
+        <p>&copy; 2025 Montserrat Pineda Díaz. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
